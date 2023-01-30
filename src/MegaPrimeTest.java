@@ -6,7 +6,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void allDigitsArePrimeShouldReturnTrue() {
-
         boolean expected = true;
         boolean result = MegaPrime.allDigitsPrime(2357);
 
@@ -15,7 +14,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void allDigitsNotPrimeShouldReturnFalse() {
-
         boolean expected = false;
         boolean result = MegaPrime.allDigitsPrime(16890);
 
@@ -24,7 +22,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void someDigitsNotPrimeShouldReturnFalse() {
-
         boolean expected = false;
         boolean result = MegaPrime.allDigitsPrime(3517620);
 
@@ -33,7 +30,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void individualDigitsNotPrimeShouldReturnFalse() {
-
         boolean result = true;
         boolean expected = false;
 
@@ -57,7 +53,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void individualDigitsAllPrimeShouldReturnTrue() {
-
         boolean result = false;
         boolean expected = true;
 
@@ -81,7 +76,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void validPrimeNumbersShouldReturnTrue() {
-
         boolean expected = true;
         boolean result = false;
 
@@ -109,7 +103,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void invalidPrimeNumbersShouldReturnFalse() {
-
         boolean expected = false;
         boolean result = true;
 
@@ -137,7 +130,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void shouldFilterMegaPrimes1() {
-
         ArrayList<Integer> expected = new ArrayList<Integer>();
         expected.add(2);
         expected.add(3);
@@ -151,7 +143,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void shouldFilterMegaPrimes2() {
-
         ArrayList<Integer> expected = new ArrayList<Integer>();
         expected.add(2);
         expected.add(3);
@@ -166,7 +157,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void shouldFilterMegaPrimes3() {
-
         ArrayList<Integer> expected = new ArrayList<Integer>();
         ArrayList result = MegaPrime.calculateMegaPrimes(1);
 
@@ -175,7 +165,6 @@ class MegaPrimeTest {
 
     @org.junit.jupiter.api.Test
     void shouldFilterMegaPrimes4() {
-
         ArrayList<Integer> expected = new ArrayList<Integer>();
         ArrayList result = MegaPrime.calculateMegaPrimes(0);
 
