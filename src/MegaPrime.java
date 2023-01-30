@@ -15,24 +15,18 @@ public class MegaPrime {
      * @return true if all digits are prime or false otherwise
      */
     public static boolean allDigitsPrime(int n) {
-
         if (n == 0) {
             return false;
         }
-
         while (n > 0) {
-            // get the last digit from n
             int digit = n % 10;
 
-            // check if it's prime or not, if not return false immediately since not megaprime
-            if (digit != 2 && digit != 3 && digit != 5  && digit != 7) {
+            if (digit != 2 && digit != 3 && digit != 5 && digit != 7) {
                 return false;
             }
 
-            // chop off the last digit of n so we can grab the next one
             n = n / 10;
         }
-
         return true;
     }
 
@@ -46,13 +40,11 @@ public class MegaPrime {
         if (n == 0 || n == 1) {
             return false;
         }
-
-        // loop whilst we are within the square root of n
+        // only need to iterate to the square root of n
         for (int i = 2; i * i <= n; i++) {
-          if (n % i == 0)
-               return false;
+            if (n % i == 0)
+                return false;
         }
-
         return true;
     }
 
@@ -62,19 +54,13 @@ public class MegaPrime {
      * @param max a non-negative number
      * @return an ArrayList containing all megaprimes from 1 to max inclusive
      */
-    public static ArrayList calculateMegaPrimes(long max) {
-        ArrayList<Long> megaPrimes = new ArrayList<Long>();
-
-        if (max == 2) {
-            megaPrimes.add(max);
-        }
-
+    public static ArrayList calculateMegaPrimes(int max) {
+        ArrayList<Integer> megaPrimes = new ArrayList<Integer>();
         for (int i = 2; i <= max; i++) {
             if (allDigitsPrime(i) && isPrime(i)) {
-                megaPrimes.add(Long.valueOf(i));
+                megaPrimes.add(i);
             }
         }
-
         return megaPrimes;
     }
 }

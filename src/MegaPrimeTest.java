@@ -138,11 +138,11 @@ class MegaPrimeTest {
     @org.junit.jupiter.api.Test
     void shouldFilterMegaPrimes1() {
 
-        ArrayList<Long> expected = new ArrayList<Long>();
-        expected.add(Long.valueOf(2));
-        expected.add(Long.valueOf(3));
-        expected.add(Long.valueOf(5));
-        expected.add(Long.valueOf(7));
+        ArrayList<Integer> expected = new ArrayList<Integer>();
+        expected.add(2);
+        expected.add(3);
+        expected.add(5);
+        expected.add(7);
         ArrayList result = MegaPrime.calculateMegaPrimes(10);
 
         assertEquals(expected, result);
@@ -152,13 +152,13 @@ class MegaPrimeTest {
     @org.junit.jupiter.api.Test
     void shouldFilterMegaPrimes2() {
 
-        ArrayList<Long> expected = new ArrayList<Long>();
-        expected.add(Long.valueOf(2));
-        expected.add(Long.valueOf(3));
-        expected.add(Long.valueOf(5));
-        expected.add(Long.valueOf(7));
-        expected.add(Long.valueOf(23));
-        expected.add(Long.valueOf(37));
+        ArrayList<Integer> expected = new ArrayList<Integer>();
+        expected.add(2);
+        expected.add(3);
+        expected.add(5);
+        expected.add(7);
+        expected.add(23);
+        expected.add(37);
         ArrayList result = MegaPrime.calculateMegaPrimes(37);
 
         assertEquals(expected, result);
@@ -167,7 +167,7 @@ class MegaPrimeTest {
     @org.junit.jupiter.api.Test
     void shouldFilterMegaPrimes3() {
 
-        ArrayList<Long> expected = new ArrayList<Long>();
+        ArrayList<Integer> expected = new ArrayList<Integer>();
         ArrayList result = MegaPrime.calculateMegaPrimes(1);
 
         assertEquals(expected, result);
@@ -176,7 +176,7 @@ class MegaPrimeTest {
     @org.junit.jupiter.api.Test
     void shouldFilterMegaPrimes4() {
 
-        ArrayList<Long> expected = new ArrayList<Long>();
+        ArrayList<Integer> expected = new ArrayList<Integer>();
         ArrayList result = MegaPrime.calculateMegaPrimes(0);
 
         assertEquals(expected, result);
